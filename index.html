@@ -42,9 +42,11 @@
     <!-- Footer -->
     <div id="footer"></div>
     <script>
-            $(document).ready(function(){
-                $('#footer').load('./elements/nav.html #footer')   
-            });
-    </script>
+        $(document).ready(function(){
+            $('#footer').load('../elements/nav.html #footer',function(){
+                $('[data-toggle="tooltip"]').tooltip();
+            });  
+        });
+</script>
 
 </html>
