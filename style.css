@@ -1,42 +1,17 @@
 /*
 
-Primary: #065FD6
-Compliementary: #D67C06
-Analagous: #06C8D6, #1406D6
-Triadic: #7C06D6, #D60660
+https://material.io/design/color/the-color-system.html#tools-for-picking-colors
 
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 :root {
-    --primary: #065FD6;
-    --compliment: #d67c06;
-    --analagous1: #06C8D6;
-    --analagous2: #1406D6;
-    --triadic1: #7C06D6;
-    --triadic2: #D60660;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 a {
     color: white;
-    text-decoration: none;
-}
-
-.content {
-    padding: 16px;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-  
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-   padding-top: 60px;
 }
 
 .construction {
@@ -47,9 +22,9 @@ a {
 .navbar {
     background-color: #00869e;
     overflow: hidden;
-    position: fixed;
     width: 100%;
     top: 0;
+    position: fixed;
 }
 
 .navbar a {
@@ -66,9 +41,10 @@ a {
     color: white;   
 }
 
-.main {
-    margin-top: 4%;
+.construction {
+    margin-top: 20%
 }
+
 
 footer {
     position: fixed;
@@ -81,5 +57,5 @@ footer {
 }
 
 footer a:hover {
-    color: #d67c06
+    color: #9e1800;
 }
