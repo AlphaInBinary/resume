@@ -24,6 +24,21 @@ a {
     text-decoration: none;
 }
 
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+   padding-top: 60px;
+}
+
 .construction {
     text-align: center;
     font-weight: 300;
@@ -32,7 +47,11 @@ a {
 .navbar {
     background-color: #00869e;
     overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
+
 .navbar a {
     float: left;
     display: block;
@@ -47,8 +66,11 @@ a {
     color: white;   
 }
 
+.main {
+    margin-top: 4%;
+}
+
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
